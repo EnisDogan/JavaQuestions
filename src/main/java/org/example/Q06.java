@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class Q06 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Dogum yilini giriniz: ");
-        int dogumYili = input.nextInt();
+        System.out.println("State the year of your birth: ");
+        int yearOfBirth = input.nextInt();
 
-        SimpleDateFormat sekil = new SimpleDateFormat("yyyy");
-        Date tarih = new Date();
-        int anlikYil = Integer.parseInt(sekil.format(tarih));
+        SimpleDateFormat format = new SimpleDateFormat("yyyy");
+        Date date = new Date();
+        int actualYear = Integer.parseInt(format.format(date));
 
-        int yas = anlikYil - dogumYili;
+        int age = actualYear - yearOfBirth;
 
-        System.out.println("Yasiniz: " + yas);
+        System.out.println("Your age: " + age);
 
     }
 }

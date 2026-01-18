@@ -10,12 +10,12 @@ public class Q04 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Number: ");
-        int number = input.nextInt();
+        double number = input.nextDouble();
 
         System.out.print("Divider: ");
-        int divider = input.nextInt();
+        double divider = input.nextDouble();
 
-        int counter = 1;
+        double counter = 1;
         while (number > divider){
             number = number - divider;
             counter++;
