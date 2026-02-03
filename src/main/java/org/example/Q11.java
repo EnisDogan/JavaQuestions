@@ -21,7 +21,6 @@ public class Q11 {
                 System.out.println("Random number: " + number + " Your chosen number: " + chosenNumber + " Counter: " + counter);
                 if (chosenNumber == number) {
                     System.out.println("Your number was found!");
-                    counter++;
                     return;
                 } else {
                     counter++;
